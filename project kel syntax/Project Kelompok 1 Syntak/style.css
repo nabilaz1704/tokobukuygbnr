@@ -1,0 +1,316 @@
+/* navbar */
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  border-bottom: 2px solid #ffe6e6;
+}
+.nav-link,
+a .dropdown-item {
+  color: #ad88c6;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-link::after,
+a .dropdown-item {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ad88c6;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.d-flex {
+  width: 800px;
+  margin-right: 50px;
+}
+
+.form-control me-2 {
+  margin-right: 40px;
+}
+.btn-outline-success:hover {
+  color: #ad88c6;
+  border-color: #ad88c6;
+}
+/* navbar */
+
+/* carousel */
+
+#carousel {
+  padding-top: 30px;
+  background-color: #ffe6e6;
+  background-size: cover;
+}
+#carouselExampleIndicators {
+  margin-left: 150px;
+  margin-top: 50px;
+  width: 1400px;
+  height: 600px;
+  border: 1px solid #ffe6e6;
+  margin-bottom: 30px;
+  border: 2px solid #ccc; /* Border untuk carousel */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 10px;
+}
+
+#carouselExampleIndicators .carousel-inner img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+#carouselExampleIndicators .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.carousel-indicators,
+.active {
+  object-fit: cover;
+}
+
+/* about */
+#about {
+  padding-top: 20px;
+  background-color: #fff;
+  background-size: cover;
+}
+
+/* genre */
+#genre {
+  background-color: #ad88c6;
+  background-size: cover;
+  padding-top: 10px;
+  padding-bottom: 100px;
+}
+
+.flexboxrow {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  padding: 10px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffe6e6;
+  width: 90%;
+  margin-top: 5px;
+  margin: 100px;
+  border-radius: 2%;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-right: 40px;
+}
+
+.gen-h3 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-top: 115px;
+  flex: 0 0 200px; /* Lebar tetap untuk h3 */
+  margin-right: 20px;
+}
+
+.flexboxrow .card-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  padding: 10px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.flexboxrow .card {
+  margin-left: 30px;
+  flex: 0 0 300px; /* Menetapkan lebar tetap 300px */
+  margin-right: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.flexboxrow .card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.flexboxrow::-webkit-scrollbar {
+  height: 8px;
+}
+
+.flexboxrow::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.flexboxrow::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* book sale */
+#book {
+  background-color: #ad88c6;
+  background-size: cover;
+  padding-top: 10px;
+  padding-bottom: 100px;
+}
+
+.wrapper-sale {
+  background-color: #fff;
+  width: fit-content;
+  margin: 100px;
+  padding: 30px;
+  border-radius: 6%;
+}
+
+.wrapper-sale .card {
+  margin-bottom: 1px;
+  margin-left: 60px;
+}
+
+.card {
+  background-color: #ffe6e6;
+  background-size: cover;
+  height: 100%;
+  width: auto;
+  margin-top: 10px;
+  width: 300px;
+  border-radius: 10px;
+}
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.row-cols-md-3 > .col {
+  display: flex;
+  flex-direction: column;
+}
+.card-body {
+  flex-grow: 1;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.page-item {
+  margin: 0 5px; /* Memberikan jarak antara item pagination */
+}
+
+.page-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.page-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.card-title,
+.card-text {
+  text-align: center;
+}
+
+.h1-book {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 150px;
+  margin-bottom: 90px;
+}
+
+footer {
+  margin-top: 5px;
+}
+
+h6 {
+  margin-left: 15px;
+}
+
+@media (max-width: 1200px) {
+  #carouselExampleIndicators {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .wrapper-sale {
+    margin: 50px auto;
+  }
+
+  .h1-book {
+    font-size: 48px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper-sale {
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .wrapper-sale .card {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .h1-book {
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-control.me-2 {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .h1-book {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .wrapper-sale {
+    margin: 20px 10px;
+    padding: 10px;
+  }
+
+  .wrapper-sale .card {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
